@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Mister Blogger</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container flex main-layout align-center space-between">
+            <div class="logo">Blogin</div>
+            <ul class="main-nav flex clean-list">
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn-menu burger" onclick="toggleMenu()"></button>
+        </div>
+    </header>
+    <main class="main-content main-layout">
+        <div class="card flex">
+            <img class="card-image" src="img/Clip-2.png">
+            <div class="card-content flex">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-button">Continue Reading </button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img class="card-image" src="img/Clip-1.png">
+            <div class="card-content flex space-between">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-button">Continue Reading </button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img class="card-image" src="img/Clip.png">
+            <div class="card-content flex space-between">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-button">Continue Reading </span></button>
+            </div>
+        </div>
+
+        <div class="nav-buttons flex space-between">
+            <button>← Previous</button>
+            <button>Next →</button>
+        </div>
+    </main>
+    <footer class="main-footer flex align-center">
+        <div class="footer-container flex align-center">
+            <div class="logo">Blogin</div>
+            <h6>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</h6>
+            <ul class="social-nav flex clean-list space-between">
+                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+            document.querySelector('.btn-menu').classList.toggle('burger');
+        }
+    </script>
+</body>
+
+
+</html>

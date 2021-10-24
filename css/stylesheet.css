@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: lato;
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'lato-bold';
+    src: url(/fonts/Lato/Lato-Bold.ttf)
+}
+
+@font-face {
+    font-family: Eurofurenceregular;
+    src: url(/fonts/eurofurence/eurof55.ttf);
+}
+
+@font-face {
+    font-family: 'fa';
+    src: url(/vendor/font-awesome/fonts/fontawesome-webfont.ttf);
+}
+
+/* BASIC */
+
+html {
+    font-family: lato, sans-serif;
+    color: #606060;
+    line-height: 1.428;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.071;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 3.125;
+}
+
+p {
+    margin: 0 1.25rem 1.25rem 0;
+    line-height: 1.25;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h6 {
+    color:#939292;
+    font-size: 0.8125;
+    font-family: lato-bold, sans-serif;
+}
+
+
+
+button {
+    cursor: pointer;
+}
+
+/* LAYOUT */
+
+.main-layout {
+    margin: 0 auto;
+}
+
+/* COMPONENTS */
+
+/* main header */
+
+.main-header {
+    background-color: #292929;
+    box-shadow: 0px -6px #1E1E1E inset;
+    /* margin-bottom: 80px; */
+}
+
+/* .header-container {
+    height: 100%;
+} */
+
+.main-header .logo {
+    font-family: Eurofurenceregular,sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: -0.8px;
+}
+
+.main-header .logo::after {
+    content: '.';
+    color: #58C93A;
+}
+
+/* .main-nav {
+    height: 100%;
+} */
+
+.main-nav a {
+    display: block;
+    color: white;
+    background-color: #292929;
+    padding: 3.125em 2.5em;
+    font-family: lato-bold, sans-serif;
+    border-left: 1px solid black;
+    justify-content: center;
+
+}
+
+
+.main-nav:last-child {
+    border-right: 1px solid black;
+}
+ 
+.main-nav a:hover {
+color:#58C93A;
+box-shadow: inset  0px -4px 0px 0px #58c93a;
+}
+
+.btn-menu {
+    font-family: fa;
+    font-size: 1.25em;
+}
+
+.btn-menu.burger::before {
+    content: '\f0c9';
+}
+
+.btn-menu:before{
+    content: '\f00d';
+}
+
+/* main content */
+
+.main-content {
+    padding-top: 80px;
+    border: 1px solid #E1E0E0;
+    padding: 80px 15px 0 15px;
+
+}
+
+/* Cards */
+
+.card {
+    margin-bottom: 60px;
+    flex-direction: column;
+}
+
+.card-image {
+    /* flex-basis:50%; */
+    /* margin-inline-end: 40px; */
+    object-fit: cover;
+}
+
+
+.card-content {
+    /* flex-basis: 50%; */
+    flex-direction: column;
+}
+
+.card-content p:last-of-type {
+    flex-grow: 1;
+}
+
+.card-button {
+    position: relative;
+    font-family: lato-bold, sans-serif;
+    font-size: 1em;
+    /* width: 186px; */
+    height: 2.5em;
+    align-self: flex-start;
+    background-color: white;
+    border: 2px solid #C2C2C2;
+    color:#C2C1C1;
+    border-radius: 3em;
+    padding: 0 1.625em;
+    line-height: 2.25em;
+    transition: padding 0.4s;
+
+}
+
+
+.card-button:hover {
+    color: #58C93A;
+    border-color: #58C93A;
+    /* width: 210px;  */
+    padding-inline-end: 2.75em;
+}
+
+.card-button:hover::after {
+    content: "→";
+    font-family: lato-bold, sans-serif;
+    position: absolute;
+    right: 12px;
+    
+}
+
+
+/* nav buttons */
+
+.nav-buttons {
+    border-top: 1px solid #E1E0E0;
+}
+
+.nav-buttons button {
+    text-transform: uppercase;
+    font-family: lato-bold,sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    background-color: transparent;
+    border: none;
+    height: 70px;
+    padding: 30px;
+    color: #818181;
+    margin: 6px;
+
+}
+
+/* footer */
+
+.main-footer {
+    background-color: #F8F8F8;
+    height: 315px;
+    justify-content: center;
+}
+
+.main-footer .logo {
+    font-family: Eurofurenceregular,sans-serif;
+    font-size: 2.5em;
+    line-height: 1.2;
+    color: black;
+    letter-spacing: -0.8px;
+}
+
+.main-footer .logo::after {
+    content: '.';
+    color: #58C93A;
+}
+
+.footer-container {
+    flex-direction: column;
+}
+
+.social-nav {
+    width: 50%;
+}
+
+.social-nav a {
+    display:block;
+    width: 40px;
+    height: 40px;
+    background-color: #E5E5E5;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.social-nav a:hover {
+    background-color: #516FAD;
+}
+
+/* HELPERS */
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+/* list helpers */
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+/* breaking points */
+
+/* mobile only - hamburger */
+
+@media (max-width: 840px) {
+    .main-nav {
+        position: fixed;
+        top: 3.125rem;
+        right: 0;
+        height: 100vh;
+        flex-direction: column; 
+        width: 200px;
+        transform: translateX(100%);
+    
+        transition: transform .6s, box-shadow .6s;
+    }
+    body.menu-open .main-nav {
+        transform: translateX(0);
+        box-shadow: -2px -2px 20px rgba(0, 0, 0, .25);
+    }
+    .main-nav>*:not(:last-child) {
+        margin: 0;
+    }
+    .main-nav a {
+        display: block;
+        padding: 10px 16px;
+        border-bottom: 1px solid #e0e0e0;
+        transition: background .3s;
+    }
+    .main-nav a:hover {
+        background: #efefef;
+    }
+}
+
+/* small */
+
+@media (min-width: 600px) and (max-width: 1020px) {
+    html {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+ .main-layout {
+     max-width: 560px;
+ }
+
+}
+
+
+/* medium */
+
+@media (min-width: 840px) {
+    .main-layout {
+        max-width: 800px;
+    
+    }
+ 
+    
+    .card {
+        flex-direction: row;
+    }
+
+    .card-image {
+        margin-inline-end: 40px;
+    }
+    
+    .btn-menu {
+        display: none;
+    }
+
+    .main-nav a {
+        display: block;
+        color: white;
+        padding: 3.125em 2.5em;
+        font-family: lato-bold, sans-serif;
+        border-left: 1px solid black;
+        justify-content: center;
+        height: 8.25rem;
+        width: 8.25rem;
+    
+    }
+
+}
+
+
+/* large */
+
+@media (min-width: 1020px) {
+    .main-layout {
+        max-width: 980px;
+      
+    }
+    
+}
